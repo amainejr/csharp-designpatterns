@@ -1,11 +1,11 @@
 namespace Strategy.Pattern {
     using Strategy.Pattern.Modifiers;
-    
+
     public class Modifier {
         private IModifierStrategy _strategy;
 
         public Modifier() {
-            _strategy = new ShowLastFour();
+            _strategy = new ShowAll();
         }
 
         public void SetStrategy(IModifierStrategy strategy) {
